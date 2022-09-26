@@ -1,0 +1,61 @@
+Solve Problems using loops
+
+1)
+n = int(input('Введите число:'))
+for x in range(1,n+1):
+    print(f'Число равно: {x}, куб из 3 равен: {x**3}')
+
+
+
+2)
+a = int(input("Введите число: "))
+b = 0
+ 
+while a > 0:
+    digit = a % 10
+    a= a // 10
+    b = b * 10
+    b = b + digit  
+ 
+print('Обратное число:', b)
+
+
+
+3)
+n = int(input('Введите число:'))
+ 
+factorial = 1
+while n > 1:
+    factorial *= n
+    n -= 1
+ 
+print('Факториал этого числа:', factorial)
+
+
+
+4)
+n=int(input('Введите число n:'))  
+i=1  
+s=0
+while i<=n: 
+    s=i+s 
+    i=i+1 
+print ('Сумма чисел от 1 до', 'n', '=', s)
+
+
+5)
+a = int(input("Введите число:")) 
+b = a 
+c = 0 
+while(a > 0): 
+    dig = a % 10 
+    c = c * 10 + dig 
+    a = a // 10 
+if(b == c): 
+    print("Это число палиндром!") 
+else: 
+    print("Это число НЕ палиндром!") 
+
+
+
+
